@@ -7,7 +7,7 @@ golang  url参数转struct
 
 #### 安装教程
 
-
+go get github.com/a1035127752/qparams
 
 #### 测试
 
