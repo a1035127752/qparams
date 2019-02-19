@@ -15,10 +15,10 @@ golang  url参数转struct
 ```
 
 type Demo struct {
-	Name string  `json:"name"`
-	Age  int 	 `json:"age"`
-	Vip  bool	 `json:"vip"`
-	Height float32  `json:"height"`
+	Name     string   `json:"name"`
+	Age      int 	  `json:"age"`
+	Vip      bool	  `json:"vip"`
+	Height   float32  `json:"height"`
 }
 
 
@@ -29,7 +29,7 @@ func main(){
 		panic(err)
 	}
 	var demo Demo
-	Unmarshal(u,&demo)
+	qparams.Unmarshal(u,&demo)
 	fmt.Println(demo)
 }
 ```
