@@ -68,9 +68,6 @@ func Unmarshal(u *url.URL, i interface{}) error{
 	qs := u.Query()
 
 	for i := 0; i < t.NumField(); i++ {
-		if i == 2{
-			fmt.Println()
-		}
 		if err := unmarshalField(v, t, i, qs); err != nil {
 			return err
 		}
